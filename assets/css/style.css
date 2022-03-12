@@ -1,47 +1,105 @@
-/* -------------------------------------------header----------------------------------- */
-.bg-primary {
+.container{
+    margin: 0px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.dropdown-menu.show {
+    z-index: 2000;
+}
+ /* <section> first  */
+ .bg-primary {
     background-color: #263045 !important;
     color: #9297a2;
 }
-.bg-light{
-    background-color: #fff;
+.text-reset {
+     text-decoration: none;
+     padding-right: 0px;
+     margin-right: 0px;
 }
-.bg-600 {
-   background-image:url("../img/img_header.png");
-   background-repeat: no-repeat;
-   background-size: 100%;
+.text-reset-right{
+    border-left: 1px solid #3c4558;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.btn-primary {
-    color: #fff;
-    background-color: #2d4a8a;
-    border-color: #2d4a8a;
+/* navbar-last */
+nav.navbar.navbar-expand-lg.navbar-light.sticky-top.py-3.d-block {
+    background-color:white;
 }
-
+.nav-item-vertical{
+    border-left: 1px solid #ccc;
+    margin-left: 20px;
+}
 .navbar-contact {
     display: block ;
-    border-left: 1px solid #ccc;
-    margin-left: 15px;
 }
-
 .navbar-contact .col-lg-6 {
     width: auto;
+}
+.active {
+    color: #2d4a8a!important;
+}
+.text-color-above{
+font-size: 9px;
+color: #868491;
+}
+.text-color-last{
+    color: #2d4a8a;
+}
+.navbar-light{
+    color: red;
 }
 .btn-outline-light{
     border-radius: 50%;
     background-color: #f3f7fd;
+    color: #59595e;
 }
-/* -------------------------------------------header----------------------------------- */
-.bg-secondary {
-    background-color:#fff;
+/* <section> two */
+.py-7{
+    background-color: #f8f8f8;
+    height: 335px;
 }
+/* slider */
+.body_header {
+    background-image:url("../img/img_header.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 630px;
+    --bs-bg-opacity: 0;
+    position:relative;
+}
+.children_body{
+    position: absolute;
+    top: 212px;
+    }
+.children_body_m3 {
+        width: 404px;
+        font-size: 12px;
+    }
+.body-color-frist{
+    color: #2d4a8a;
+    font-size: 20px;
+}
+.body-color-last{
+    color: #2d4a8a;
+    text-decoration:none
+}
+.btn-learnMore {
+        background: #2d4a8a;
+        color: white;
+        margin-right: 18px;
+    }
+.btn-getIn {
+    border-color: #2d4a8a;
+    color: #2d4a8a;
+    }       
 .card-slider{
     background-color: #263045;
-    height: 190px;
     border-color: #fff;
     border-style: solid;
     border-width: 12px;
     z-index: 1;
-    position: inherit;
+  position: relative;
 }
 .card-besides{
 background-color: #2d4a8a;
@@ -49,9 +107,108 @@ background-color: #2d4a8a;
 .card-between{
 background-color: #253e74;
 }
-.background-card-slider{
-    background-color: #f8f8f8;
-    height: 259px;
-    top: -123px;
-    z-index: 0;
+.detail-card-besides{
+    color: white;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    padding-right: 56px;
+    padding-left: 20px;
+}
+.detail-card-icon{
+display: flex;
+align-items: center;
+}
+/* -----------------------------------------------card py-8--------------------------- */
+.card-about{
+    height: 686px;
+    background-image: url("../img/about/bg_about.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.card-about-left{
+    background-color: red;
+    box-sizing: border-box;
+    height: 655px;
+}
+/* <section> three */
+.card-about-right{
+    width: 439px;
+    height: 577px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 13px;
+    position: relative;
+
+}
+.about-right-first{
+    font-size: 22px;
+    color: #2d4a8a;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+}
+.about-right-adjacent{
+    font-size: 70px;
+    font-weight: 700;
+    color: #2d4a8a;
+    position:relative;
+    opacity: 0.1;
+    margin-top: -28px;
+}
+.body-card-about {
+    position: absolute;
+    top: 50px;
+}
+.card-about-biggest{
+    width: auto;
+    height: 72px;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+.card-about-biggest1{
+    font-size: 26px;
+    padding-left: 0px;
+    margin-left: -8px;
+}
+.color-Textbig{
+    color: #2d4a8a;
+    text-decoration:none;
+}
+.color-Textsmall{
+    color: #707070;
+    font-size: 10px;
+}
+.color-Textmedium{
+    color: #1c2842;  
+}
+.row.content-card-about {
+    padding-top: 30px;
+    padding-bottom: 7px;
+}
+.row.content-card-about1 {
+    padding-top: 31px;
+    padding-bottom: 30px;
+}
+.card-about-hr {
+    text-align: left;
+}
+.founder-name{
+padding-left: 30px;
+}
+/* <section> why choose us */
+.card-chooseUs{
+    background-image: url("../img/why_choose_us/top-view-person-writing-laptop-with-copy-space.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 525px;
+}
+.card-chooseUs-left{
+background-color: #132e68;
+opacity: 0.93;
+}
+.card-chooseUs-right{
+background-color: #f0f4f8;
 }
