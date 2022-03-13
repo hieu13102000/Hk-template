@@ -1,8 +1,30 @@
+/* ----------------------------------------- all ------------------------ */
 .container{
     margin: 0px;
     padding-left: 10%;
     box-sizing: border-box;
 }
+.box-card{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.textDefault-color-card{
+    color: #1c2842;
+    font-size: 23px;
+}
+.textSmall-color-card{
+    color: #707070;
+    font-size: 13px;
+}
+.textMedium-color-card{
+    color: #2d4a8a;
+    font-size: 13px;
+}
+.textBiggest-color-card{
+    color: #2d4a8a;
+   text-decoration: none;
+}
+/* -------------------------------------- end all ------------------------------ */
 .dropdown-menu.show {
     z-index: 2000;
 }
@@ -133,7 +155,7 @@ align-items: center;
 }
 .parent-about-left{
     width: 100%;
-    height: 114%;
+    height: 124%;
     padding-top: 92px;
     padding-bottom: 119px;
 }
@@ -151,10 +173,10 @@ align-items: center;
     height: 87px;
     margin: 10px;
 }
-/* -play btn about- */
+/* ----------------------------play btn about----------------------------------------------- */
 .child-about-left2 {
     position: absolute;
-    top: 358px;
+    top: 408px;
     left: 509px;
 }
 .play-btn {
@@ -242,7 +264,23 @@ align-items: center;
   
     }
   }
-/* -end play btn about- */
+  /* modal play video boostrap */
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.btn-close {
+  position:absolute;
+  right:-30px;
+  top:0;
+}
+/* ----------------------------------end play btn about------------------------------- */
 .col-4.body-color-frist {
     font-weight: 700;
     font-size: xxx-large;
@@ -448,10 +486,65 @@ h4 {
     opacity: 1;
 }
 
-
-
-
-
+/* ------------------------------------------------------<section> project---------------------- */
+.box-card-project{
+    padding-bottom: 40px;
+}
+.card-box {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px 0px #c5c5c5;
+    margin-bottom: 30px;
+    float: left;
+}
+.card-box:hover{
+    background-color: #1c376e;
+    opacity: 0.8;
+}
+.card-box:hover .text-card-project ,.text-card-project:hover{
+    color: #fff;
+}
+.card-box:hover .textSmall-color-card,.textSmall-color-card:hover{
+    color: #bbc5d9;
+}
+.card-box:hover .card-project-left,.card-project-left:hover{
+    color: #fff;
+    background-color: #2d4a8a;
+    opacity: 1;
+}
+.card-box:hover .card-project-right,.card-project-right:hover{
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+.card-box .card-thumbnail {
+    max-height: 200px;
+    overflow: hidden;
+    transition: 1s;
+}
+.card-box h3 a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.text-card-project{
+    color: #1c2842;
+    font-size: 20px;
+}
+.card-project-left{
+    padding-top: 19px;
+    padding-bottom: 22px;
+    padding-left: 30px; 
+}
+.card-project-right{
+    padding-top: 31px;
+    padding-bottom: 22px;
+    color: #2d4a8a;
+    text-decoration: none;
+    font-size: 23px;
+    text-align: center;
+}
+.card-project-right:hover{
+    cursor: pointer;
+}
 
 
 
