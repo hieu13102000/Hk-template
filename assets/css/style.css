@@ -545,14 +545,67 @@ h4 {
 .card-project-right:hover{
     cursor: pointer;
 }
+/* ------------------------------------------------------<section> counter---------------------- */
 
 
-
-
-
-
-
-
-
+/* ------------------------------------------------------<section> team---------------------- */
+.box-card-team{
+    padding-bottom: 40px;
+    background-color: #f0f4f8;
+}
+.body-card-team{
+    padding-top: 19px;
+    padding-left: 25px;
+    padding-bottom: 19px;
+}
+.text-card-team{
+    color: #1c2842;
+    font-size: 17px;
+}
+/*------------------------------------------------------ <section> review ----------------------- */
+.card-review{
+    background-image: url("../img/review/bg_review.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 577px;
+}
+.body-card-review{
+    background-color: #132e68;
+    opacity: 0.85;
+    position: relative;
+    padding-top: 100px;
+}
+.text-review-medium{
+    font-size: 15px;
+    color: #b0b5c5;
+}
+.text-review-biggest{
+    font-weight: 500;
+    font-size: 24px;
+    margin: auto;
+    color: #ffffff;
+    width: 378px;
+}
+.text-review-small{
+    font-size: 13px;
+    margin: auto;
+    color: #ffffff;
+    width: 257px;
+    padding-top: 28px;
+    padding-bottom: 45px;
+}
+.btn-view{
+    width: 170px;
+    height: 59px;
+    background-color: #ffffff;
+    color: #2d4a8a;
+    font-size: 11px;
+}
+.btn-view:hover{
+    background-color:#2d4a8a ;
+    color: white;
+    border: 5spx solid white;
+}
 
 
