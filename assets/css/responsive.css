@@ -1,0 +1,32 @@
+@media(max-width:600px){
+    .banner{
+        height: 400px;
+    }
+    .banner-right {
+      display: none;
+    }
+    .service {
+        height: 504px;
+    }
+    .parent-about-left {
+        height: 100%;
+    }
+    .card-about {
+        height: 1140px;
+    }
+    .border-about-left {
+        position: absolute;
+        left: 45%;
+    }
+    .child-about-left2 {
+        position: absolute;
+        top: 44%;
+        left: 68%;
+    }
+    .card-about-right {
+        width: 370px;
+        height: auto;
+        margin-top: -95px;
+         margin-left: 0px;
+    }
+}
