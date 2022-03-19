@@ -11,6 +11,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -93,7 +94,7 @@
             </form>
             <div class="dropdown d-none d-lg-block">
               <button class="btn btn-outline-light ms-2" id="dropdownMenuButton1" type="submit"
-                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-800"></i></button>
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
               <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1" style="top:55px">
                 <form>
                   <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
@@ -113,20 +114,23 @@
 
     <!---------------------------------------------------------- end navbar-last--------------------------------------------------------- -->
 
-    <!--------------------------------------------------------- slider ----------------------------------------------------------->
-    <div class="body_header">
-      <div class=" container children_body">
-        <h4 class="mb-3  body-color-frist">Optimize it System</h4>
-        <h1>Best<a class="body-color-last">Digital Agency<a></h1>
-        <h1>And Business</h1>
-        <h4 class="mb-3 children_body_m3">Dynamically exploit resource leveling catalysts for change predominate focused
-          infrastructures vis a vis efficient is our main focus but everybody is</h4>
-        <a class="btn btn-learnMore" href="" role="button">LEARN MORE <i class="fa fa-arrow-right"
-            aria-hidden="true"></i></a>
-        <a class="btn btn-getIn" href="" role="button">GET IN TOUCH <i class="fa fa-arrow-right"
-            aria-hidden="true"></i></a>
+    <!--------------------------------------------------------- banner ----------------------------------------------------------->
+    <section>
+      <div class="body_header">
+        <div class=" container children_body">
+          <h4 class="mb-3  body-color-frist">Optimize it System</h4>
+          <h1>Best<a class="body-color-last">Digital Agency<a></h1>
+          <h1>And Business</h1>
+          <h4 class="mb-3 children_body_m3">Dynamically exploit resource leveling catalysts for change predominate focused
+            infrastructures vis a vis efficient is our main focus but everybody is</h4>
+          <a class="btn btn-learnMore" href="" role="button">LEARN MORE <i class="fa fa-arrow-right"
+              aria-hidden="true"></i></a>
+          <a class="btn btn-getIn" href="" role="button">GET IN TOUCH <i class="fa fa-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
       </div>
-    </div>
+    </section>
+   
     <!-- <section> two ============================-->
     <section class="py-7" style="margin-top:-5.8rem">
 
@@ -201,26 +205,23 @@
               </div>
             </div>
             <div class="child-about-left2">
-              <button type="button" class="play-btn video-btn" data-bs-toggle="modal"
-                data-bs-target="#myModal"></button>
+             <!-- Button trigger modal -->
+<button type="button" class="play-btn video-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="enableAutoplay()"></button>
 
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
-                      </button>
-                      <!-- 16:9 aspect ratio -->
-                      <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jfrjeg26Cwk" id="video"
-                          allowscriptaccess="always" allow="autoplay"></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jfrjeg26Cwk" id="video"
+        allowscriptaccess="always" allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
             </div>
           </div>
@@ -477,7 +478,82 @@
  <!-- end <section> projects ============================-->
 
  <!--  <section> counter ============================-->
-   
+  <section>
+    <div class="container-fluid card-counter">
+      <div class="container">
+      <div class="row">
+        <div class=" col-md-12 col-lg-6 card-counter-left">
+          <div class="row">
+            <div class="col-4 col-md-4 col-lg-3">
+              <div class="circle1">
+              <div class="circle2 ">
+                <div class="circle3"><span>95</span></div>
+              </div>
+            </div>
+          </div>
+            <div class="col-8 col-md-8 col-lg-9">
+              <div class="title-counter-left"><span>Project Completed</span></div>
+              <div class="description-counter-left"><span>Lorem Ipsom is a dolar site amet which is a large filed in the world but everybody start, his own business in.
+              </span></div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-3">
+              <div class="circle1  ">
+                <div class="circle2 ">
+                  <div class="circle3"><span>53</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-md-8 col-lg-9">
+              <div class="title-counter-left"><span>Happy Clients</span></div>
+              <div class="description-counter-left"><span>Lorem Ipsom is a dolar site amet which is a large filed in the world but everybody start, his own business in.</span></div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-3"> 
+               <div class="circle1">
+              <div class="circle2 ">
+                <div class="circle3"><span>10</span></div>
+              </div>
+            </div></div>
+            <div class="col-8 col-md-8 col-lg-9">
+              <div class="title-counter-left"><span>Years of Experience</span></div>
+              <div class="description-counter-left"><span>Lorem Ipsom is a dolar site amet which is a large filed in the world but everybody start, his own business in.
+              </span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 card-counter-right">
+          <img src="assets/img/counter/bg_right_counter.png" class="img-fluid img-right-counter" alt="Responsive image">
+          <div class="btn-play-counter">
+            <!-- Button trigger modal -->
+<button type="button" class="play-btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/watch?v=5eVu__pc6gI" data-target="#myModal"></button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+           </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
  <!--  end <section> counter ============================-->
 
    <!--  <section> team ============================-->
@@ -485,9 +561,8 @@
       <div class="container-fluid box-card-team">
         <div class="row container">
           <div class="col-5 box-card">
-            <div class="row textMedium-color-card"><span>Latest Case Studies</span></div>
-            <div class="row textDefault-color-card"><span>Introduce Our<a class="textBiggest-color-card">
-                  Projects</a></span></div>
+            <div class="row textMedium-color-card"><span>Meet Our Team</span></div>
+            <div class="row textDefault-color-card"><span>Our Leadership<a class="textBiggest-color-card"> Team</a></span></div>
           </div>
           <div class="col-7 box-card textSmall-color-card">
             <span>Software development outsourcing is just a tool to achieve business goals. But there is no way to get
@@ -501,8 +576,6 @@
                 <div class="customMist">
                 </div>
                 <img src="./assets/img/team/team4.png" class="img-fluid" alt="team1.png">
-                <div class="cover">
-                </div>
                 <div class="overlay-team">
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_fb.png"></div>
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_tw.png"></div>
@@ -523,9 +596,7 @@
               <div class="card-thumbnail ">
                 <div class="customMist">
                 </div>
-                <img src="./assets/img/team/team4.png" class="img-fluid" alt="team1.png">
-                <div class="cover">
-                </div>
+                <img src="./assets/img/team/team2.png" class="img-fluid" alt="team1.png">
                 <div class="overlay-team">
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_fb.png"></div>
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_tw.png"></div>
@@ -545,9 +616,7 @@
               <div class="card-thumbnail ">
                 <div class="customMist">
                 </div>
-                <img src="./assets/img/team/team4.png" class="img-fluid" alt="team1.png">
-                <div class="cover">
-                </div>
+                <img src="./assets/img/team/team3.png" class="img-fluid" alt="team1.png">
                 <div class="overlay-team">
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_fb.png"></div>
                     <div class="list-icon-team"><img src="./assets/img/icons/icon_tw.png"></div>
@@ -612,7 +681,7 @@
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 item">
-                <div class="box-review-card"><img class="rounded-circle" src="./assets/img/review/review1.png">
+                <div class="box-review-card"><img class="rounded-circle" src="./assets/img/review/review2.png">
                     <h3 class="name">Anjelina Santha</h3>
                     <p class="title"> Graphic Designer</p>
                     <p class="description">Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod has a incididunt ut labore et dolore magna is Ut enim ad minim veniam, quis that</p>
@@ -620,7 +689,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-              <div class="box-review-card"><img class="rounded-circle" src="./assets/img/review/review1.png">
+              <div class="box-review-card"><img class="rounded-circle" src="./assets/img/review/review3.png">
                   <h3 class="name">Anjelina Santha</h3>
                   <p class="title"> Graphic Designer</p>
                   <p class="description">Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod has a incididunt ut labore et dolore magna is Ut enim ad minim veniam, quis that</p>
@@ -705,11 +774,7 @@
         </div>
       </div>
     </section>
-
-
-
-
-
+ <!--  end <section> blog ============================-->
 
 
 
@@ -723,9 +788,6 @@
     crossorigin="anonymous"></script>
   <script src="assets/js/is.min.js"></script>
   <script src="assets/js/btnPlay.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Rubik:wght@300;400;500;600;700;800&amp;display=swap"
-    rel="stylesheet">
 </body>
 
 </html>
