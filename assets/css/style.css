@@ -1,6 +1,6 @@
 /* ----------------------------------------- all ------------------------ */
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -30,11 +30,8 @@
    text-decoration: none;
 }
 /* -------------------------------------- end all ------------------------------ */
-.dropdown-menu.show {
-    z-index: 2000;
-}
- /* <section> first  */
- .bg-primary {
+ /* <section> topbar */
+ .topbar {
     background-color: #263045 !important;
     color: #9297a2;
 }
@@ -48,7 +45,10 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-/* navbar-last */
+.dropdown-menu.show {
+    z-index: 2000;
+}
+/* header */
 nav.navbar.navbar-expand-lg.navbar-light.sticky-top.py-3.d-block {
     background-color:white;
 }
@@ -80,28 +80,23 @@ color: #868491;
     background-color: #f3f7fd;
     color: #59595e;
 }
-/* <section> two */
-.py-7{
-    background-color: #f8f8f8;
-    height: 335px;
-}
 /* banner */
-.body_header {
-    background-image:url("../img/img_header.png");
+.banner {
+    background-image:url("../img/banner/bg_banner1.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 630px;
-    --bs-bg-opacity: 0;
-    position:relative;
+    height: 600px;
+    position: relative;
+    z-index: 0;
 }
-.children_body{
-    position: absolute;
-    top: 212px;
-    }
+.banner-left{
+    align-items: center;
+    display: flex;
+}
 .children_body_m3 {
-        width: 404px;
-        font-size: 12px;
+     width: 404px;
+     font-size: 12px;
     }
 .body-color-frist{
     color: #2d4a8a;
@@ -112,27 +107,73 @@ color: #868491;
     text-decoration:none
 }
 .btn-learnMore {
-        background: #2d4a8a;
-        color: white;
-        margin-right: 18px;
-    }
+     background: #2d4a8a;
+     color: white;
+     margin-right: 18px;
+     width: 168px;
+     height: 56px;
+     border-radius: 0px;
+}
+.btn-learnMore:hover{
+    background-color:white ;
+    color: #2d4a8a ;
+    border: 5px solid #2d4a8a;
+}
 .btn-getIn {
     border-color: #2d4a8a;
     color: #2d4a8a;
-    }       
-.card-slider{
+    width: 168px;
+    height: 56px;
+    border-radius: 0px;
+}
+.btn-getIn:hover{
+    background-color:#2d4a8a ;
+    color: white;
+}
+.parent-banner-right{
+    position: relative;
+} 
+.child-banner-right{
+    position: absolute;
+    left: -17%;
+    bottom: 15%;
+    width: 174px;
+    height: 174px;
+    background-color: #2d4a8a;
+    color:#fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.banner-right-title{
+    font-size: 45px;
+    font-weight: 400;
+}
+.banner-right-description{
+    font-size: 18px;
+    text-align: center;
+}      
+/* <section> service */
+.service{
+    background-color: #f8f8f8;
+    height: 335px;
+    margin-top: -6rem;
+}
+.card-service{
     background-color: #263045;
     border-color: #fff;
     border-style: solid;
     border-width: 12px;
     z-index: 1;
-  position: relative;
+    position: relative;
 }
 .card-besides{
-background-color: #2d4a8a;
+    background-color: #2d4a8a;
 }
 .card-between{
-background-color: #253e74;
+    background-color: #253e74;
 }
 .detail-card-besides{
     color: white;
@@ -142,10 +183,10 @@ background-color: #253e74;
     padding-left: 20px;
 }
 .detail-card-icon{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
-/*--------------------------------------------- <section> three--------------------------------------------------------------- */
+/*--------------------------------------------- <section> about--------------------------------------------------------------- */
 .card-about{
     height: 686px;
     background-image: url("../img/about/bg_about.png");
@@ -420,10 +461,6 @@ background-color: #f0f4f8;
     top: 56px;
     left: -124px;
 }
-
-
-
-
 .box {
     padding: 50px 30px;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);

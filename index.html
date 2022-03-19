@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <!-- <section> first ============================-->
-    <section class="bg-primary py-2 d-none d-sm-block">
+    <!-- <section> topbar ============================-->
+    <section class="topbar py-2 d-none d-sm-block">
       <!--------------------------- navbar-first---------------------------------- -->
       <nav class="navbar navbar-expand-lg">
         <!-- Container wrapper -->
@@ -51,7 +51,7 @@
             <div class="dropdown">
               <a class="text-reset text-reset-right me-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="nav-icon" src="./assets/img/icons/flash.png" alt="icon">
+                <img class="nav-icon" src="./assets/img/icons/flag.png" alt="icon">
                 ENGLISH
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -68,8 +68,8 @@
       </nav>
       <!-- end navbar-first-->
     </section>
-    <!-- end <section> first ============================-->
-    <!---------------------------------------------------------- navbar-last--------------------------------------------------------- -->
+    <!-- end <section> topbar ============================-->
+    <!---------------------------------------------------------- header--------------------------------------------------------- -->
 
     <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 d-block"
       data-navbar-on-scroll="data-navbar-on-scroll">
@@ -112,36 +112,52 @@
       </div>
     </nav>
 
-    <!---------------------------------------------------------- end navbar-last--------------------------------------------------------- -->
+    <!---------------------------------------------------------- end header--------------------------------------------------------- -->
 
     <!--------------------------------------------------------- banner ----------------------------------------------------------->
     <section>
-      <div class="body_header">
-        <div class=" container children_body">
-          <h4 class="mb-3  body-color-frist">Optimize it System</h4>
-          <h1>Best<a class="body-color-last">Digital Agency<a></h1>
-          <h1>And Business</h1>
-          <h4 class="mb-3 children_body_m3">Dynamically exploit resource leveling catalysts for change predominate focused
-            infrastructures vis a vis efficient is our main focus but everybody is</h4>
-          <a class="btn btn-learnMore" href="" role="button">LEARN MORE <i class="fa fa-arrow-right"
-              aria-hidden="true"></i></a>
-          <a class="btn btn-getIn" href="" role="button">GET IN TOUCH <i class="fa fa-arrow-right"
-              aria-hidden="true"></i></a>
+      <div class="banner">
+        <div class="row container ">
+          <div class="col-12 col-md-6 col-lg-6 banner-left">
+            <div class="body-banner-left">
+              <h4 class="mb-3  body-color-frist">Optimize it System</h4>
+              <h1>Best <a class="body-color-last">Digital Agency<a></h1>
+              <h1>And Business</h1>
+              <h4 class="mb-3 children_body_m3">Dynamically exploit resource leveling catalysts for change predominate focused
+                infrastructures vis a vis efficient is our main focus but everybody is</h4>
+               <a><button type="button" class="btn btn-learnMore">LEARN MORE &ensp;<i class="fa fa-arrow-right"
+                  aria-hidden="true"></i></button></a>
+                <a><button type="button" class="btn btn-getIn">GET IN TOUCH &ensp;<i class="fa fa-arrow-right"
+                    aria-hidden="true"></i></button></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 banner-right">
+            <div class="parent-banner-right">
+              <img src="./assets/img/banner/bg_banner2.png" class="img-fluid" alt="banner-right">
+              <div class="child-banner-right">
+                <div class="banner-right-title">
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </div>
+                <div class="banner-right-description">
+                  <span>100% Client Satisfaction</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-   
-    <!-- <section> two ============================-->
-    <section class="py-7" style="margin-top:-5.8rem">
-
+   <!--------------------------------------------------------- end banner ----------------------------------------------------------->
+    <!-- <section> service ============================-->
+    <section class="service">
       <div class="container">
-        <div class="row card-slider">
+        <div class="row card-service">
           <div class="col-lg-4 col-xl-4 card-besides">
             <div class="row">
-              <div class="col-md-2 mb-2 detail-card-icon">
+              <div class="col-2 col-md-2 mb-2 detail-card-icon">
                 <img src="./assets/img/icons/androi.png">
               </div>
-              <div class="col-md-10 mb-10 detail-card-besides">
+              <div class=" col-10 col-md-10 mb-10 detail-card-besides">
                 <div class="row">
                   <h3>Android Apps Dev</h3>
                 </div>
@@ -155,10 +171,10 @@
           </div>
           <div class="col-lg-4 col-xl-4 card-between">
             <div class="row">
-              <div class="col-md-2 mb-2 detail-card-icon">
+              <div class="col-2 col-md-2 mb-2 detail-card-icon">
                 <img src="./assets/img/icons/command.png">
               </div>
-              <div class="col-md-10 mb-10 detail-card-besides">
+              <div class="col-10 col-md-10 mb-10 detail-card-besides">
                 <div class="row">
                   <h3>Web App Develop </h3>
                 </div>
@@ -171,10 +187,10 @@
           </div>
           <div class="col-lg-4 col-xl-4 card-besides">
             <div class="row">
-              <div class="col-md-2 mb-2 detail-card-icon">
+              <div class="col-2 col-md-2 mb-2 detail-card-icon">
                 <img src="./assets/img/icons/pend.png">
               </div>
-              <div class="col-md-10 mb-10 detail-card-besides">
+              <div class="col-10 col-md-10 mb-10 detail-card-besides">
                 <div class="row">
                   <h3>Graphics Design</h3>
                 </div>
@@ -188,15 +204,13 @@
         </div>
       </div>
     </section>
-    <!-- end <section> two ============================-->
-    <!--------------------------------------------------------- end slider ----------------------------------------------------------->
+    <!-- end <section> service ============================-->
 
-
-    <!-- <section> three ============================-->
+    <!-- <section> about ============================-->
     <section class="card-about">
       <div class="container-fluid card-servicer">
         <div class="row ">
-          <div class="col col-lg-6 col-xl-6 card-about-left">
+          <div class="col-12 col-lg-6 col-xl-6 card-about-left">
             <img class="parent-about-left" src="./assets/img/about/bg_about_left.png" alt="bg_left_about1" />
             <div class="border-about-left">
               <div class="row child-about-left1">
@@ -225,7 +239,7 @@
 
             </div>
           </div>
-          <div class="col col-lg-6 col-xl-6 card-about-right">
+          <div class="col-12 col-lg-6 col-xl-6 card-about-right">
             <div class="row">
               <p class="about-right-first">About BigFox </p>
               <p class="about-right-adjacent">About</p>
@@ -287,7 +301,7 @@
       </div>
       </div>
     </section>
-    <!--  end <section> three ============================-->
+    <!--  end <section> about ============================-->
     <!-- <section> why choose us ============================-->
     <section>
       <div class="container-fluid">
@@ -569,7 +583,7 @@
               worthwhile results without cooperation and trust between a client company. outsourcing is just a tool to
               achieve business.</span>
           </div>
-          <div class="col-md-6 col-lg-3 customHover">
+          <div class="col-6 col-md-6 col-lg-3 customHover">
             <!-- Bootstrap 5 card box -->
             <div class="card-box-team">
               <div class="card-thumbnail ">
@@ -590,7 +604,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 customHover">
+          <div class="col-6 col-md-6 col-lg-3 customHover">
             <!-- Bootstrap 5 card box -->
             <div class="card-box-team">
               <div class="card-thumbnail ">
@@ -610,7 +624,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 customHover">
+          <div class="col-6 col-md-6 col-lg-3 customHover">
             <!-- Bootstrap 5 card box -->
             <div class="card-box-team">
               <div class="card-thumbnail ">
@@ -630,7 +644,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 customHover">
+          <div class="col-6 col-md-6 col-lg-3 customHover">
             <!-- Bootstrap 5 card box -->
             <div class="card-box-team">
               <div class="card-thumbnail ">
@@ -655,8 +669,6 @@
         </div>
       </div>
     </section>
-
-
 
    <!--  <section> review ============================-->
     <section>
