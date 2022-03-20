@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    overflow-x: hidden!important;
+}
+
 .container{
     margin: auto;
     padding-left: 5%;

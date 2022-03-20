@@ -1,32 +1,140 @@
 @media(max-width:600px){
     .banner{
         height: 400px;
+        padding-top: 10%;
     }
     .banner-right {
       display: none;
     }
+    .children_body_m3 {
+        width: 346px;
+    }
+    .btn-learnMore {
+        margin-right: 1%;
+        width: 161px;
+    }
+    .btn-getIn {
+        width: 161px;
+    }
     .service {
         height: 504px;
     }
-    .parent-about-left {
-        height: 100%;
-    }
+  /* <section> about */
     .card-about {
-        height: 1140px;
+        height: 1050px;
     }
     .border-about-left {
         position: absolute;
         left: 45%;
     }
+    img.parent-about-left {
+        height: calc(100% - 18%);
+    }
+    .parent-about-left {
+        height: 100%;
+    }
     .child-about-left2 {
         position: absolute;
-        top: 44%;
+        top: 31%;
         left: 68%;
     }
     .card-about-right {
         width: 370px;
         height: auto;
-        margin-top: -95px;
+        margin-top: -56%;
          margin-left: 0px;
+    }
+    .body-card-about {
+        left: 5%;
+    }
+    /* <section> why choose us */
+    .card-chooseUs {
+        height: 1428px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-chooseUs-left {
+        position: relative;
+        height: 514px;
+    }
+    .card-chooseUs-right {
+        height: 914px;
+    }
+    .parent-chooseUs-left {
+        position: absolute;
+        width: inherit;
+        top: 71px;
+        left: 5%;
+    }
+    .content-chooseUs-right {
+    position: relative;
+    top: 2%;
+    left: 1%;
+    }
+     /* <section> projects */
+     .box-card {
+        margin-bottom: 0%;
+    }
+    .textSmall-color-card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+     /* <section> counter  */
+     .card-counter {
+        width: 100%;
+        height: 880px;
+    }
+    .img-right-counter {
+        width: 696px;
+        height: 278px;
+        margin-top: 15%;
+    }
+    .btn-play-counter {
+        position: absolute;
+        top: 44%;
+        left: 23%;
+    }
+    /* <section> review */
+    .card-review {
+        height: 469px;
+    }
+    .team-boxed {
+        height: 1254px;
+    }
+    .team-boxed .people {
+        padding: 0px;
+        position: inherit;
+    }
+    .team-boxed .item {
+        width: auto;
+        height: auto;
+        border: none;
+    }
+    img.img-team.img-fluid {
+        width: calc(100% + 10px);
+    }
+    .customHover:hover.customHover::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(92,122,189);
+        width: calc(100% - 25px);
+        opacity: 0.33;
+        height: calc(100% - 143px);
+        z-index: 1;
+    }
+    .box-card-blog {
+        height: 1885px;
+    }
+    .card-box-blog {
+        width: 330px;
+        height: 100%;
+    }
+    img.box-img-blog {
+        width: calc(100% - 50px);
+        height: auto;
+    }
+    .card-thumbnail-blog .cover {
+        width: calc(100% - 50px);
+        height: calc(100% - 30px);
     }
 }
