@@ -1,4 +1,7 @@
-@media(max-width:600px){
+@media(max-width:500px){
+    section {
+        overflow: hidden!important;
+    }
     .banner{
         height: 400px;
         padding-top: 10%;
@@ -17,7 +20,7 @@
         width: 161px;
     }
     .service {
-        height: 504px;
+        height: 606px;
     }
   /* <section> about */
     .card-about {
@@ -25,7 +28,8 @@
     }
     .border-about-left {
         position: absolute;
-        left: 45%;
+        left: 41%;
+        top: 7%;
     }
     img.parent-about-left {
         height: calc(100% - 18%);
@@ -45,7 +49,7 @@
          margin-left: 0px;
     }
     .body-card-about {
-        left: 5%;
+        left: -1%;
     }
     /* <section> why choose us */
     .card-chooseUs {
@@ -56,6 +60,12 @@
     .card-chooseUs-left {
         position: relative;
         height: 514px;
+    }
+    .chooseUs-right-adjacent {
+        left: -1%;
+    }
+    .chooseUs-right-first {
+        left: -1%;
     }
     .card-chooseUs-right {
         height: 914px;
@@ -69,7 +79,8 @@
     .content-chooseUs-right {
     position: relative;
     top: 2%;
-    left: 1%;
+    left: 0%;
+    right: 1%;
     }
      /* <section> projects */
      .box-card {
@@ -93,6 +104,18 @@
         position: absolute;
         top: 44%;
         left: 23%;
+    }
+    .circle1 {
+        width: 109px;
+        height: 110px;
+    }
+    .circle2 {
+        width: 88px;
+        height: 86px;
+    }
+    .circle3 {
+        width: 62px;
+        height: 64px;
     }
     /* <section> review */
     .card-review {
