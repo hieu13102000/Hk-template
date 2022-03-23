@@ -10,7 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet" />
 </head>
@@ -205,23 +207,7 @@
             </div>
             <div class="child-about-left2">
              <!-- Button trigger modal -->
-<button type="button" class="play-btn video-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="enableAutoplay()"></button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jfrjeg26Cwk" id="video"
-        allowscriptaccess="always" allow="autoplay"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
+<button type="button" class="play-btn video-btn" onclick="btnVideAbout()"></button>
             </div>
           </div>
           <div class="col-12 col-lg-6 col-xl-6 card-about-right">
@@ -523,30 +509,7 @@
           <img src="assets/img/counter/bg_right_counter.png" class="img-fluid img-right-counter" alt="Responsive image">
           <div class="btn-play-counter">
             <!-- Button trigger modal -->
-<button type="button" class="play-btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/watch?v=5eVu__pc6gI" data-target="#myModal"></button>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      
-      <div class="modal-body">
-
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>        
-        <!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-</div>
-        
-        
-      </div>
-
-    </div>
-  </div>
-</div> 
-  
+<button onclick="btnVideCounter()" type="button" class="glightbox play-btn video-btn"></button>
            </div>
         </div>
       </div>
@@ -926,6 +889,39 @@
     </div>
   </footer>
 </section>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var variable = {
+    'touchNavigation': true,
+    'href': '',
+    'type': 'video',
+    'source': 'youtube', //vimeo, youtube or local
+    'width': 900,
+    'autoPlayVideos': 'true',
+  }
+  function btnVideAbout (){
+    var videoAbout = document.getElementsByClassName("play-btn")[0];
+    variable.href='https://www.youtube.com/watch?v=4sosXZsdy-s';
+    var glightbox = GLightbox(variable);
+    videoAbout.classList.add('glightbox')
+  }
+  function btnVideCounter (){
+    var videoAbout = document.getElementsByClassName("play-btn")[1];
+    variable.href='https://www.youtube.com/watch?v=qgY134PA4d8';
+    var glightbox = GLightbox(variable);
+    // videoAbout.classList.add('glightbox')
+  }
+
+  
+
+
+</script>
   <!--    JavaScripts-->
   <!-- ===============================================-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -935,7 +931,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <script src="assets/js/is.min.js"></script>
-  <script src="assets/js/btnPlay.js"></script>
+  <!-- <script src="assets/js/btnPlay.js"></script> -->
 </body>
 
 </html>
